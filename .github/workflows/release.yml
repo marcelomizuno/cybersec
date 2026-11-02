@@ -13,9 +13,9 @@ jobs:
 
   release:
     needs: validate
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       - name: Check tag matches plugin.json version
         run: python3 -I scripts/validate_skill.py --tag "$GITHUB_REF_NAME"

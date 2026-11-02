@@ -1,41 +1,41 @@
 # cybersec
 
-Skill para Claude Code com uma base de referência de cibersegurança curada a partir do dataset
-[Vyber07/cyber-security](https://huggingface.co/datasets/Vyber07/cyber-security) (Apache-2.0).
+A Claude Code skill with a curated cybersecurity reference knowledge base, built from the
+[Vyber07/cyber-security](https://huggingface.co/datasets/Vyber07/cyber-security) Hugging Face dataset (Apache-2.0).
 
-Do dataset original (~18 GB) foram aproveitados só os guias estruturados e úteis: playbooks de IR,
-queries de threat hunting, padrões de detecção, hardening, pentest web/API, red team, cloud,
-containers, forense, criptografia, compliance e segurança IoT Thread/Matter. Ficaram de fora
-duplicatas, tarballs do ARVO, cenários sintéticos (`*-realtime-scenarios`, `*-real-examples*`) e
-os textos de malware gerados por template a partir do MITRE.
+Out of the original ~18 GB dataset, only the structured, practical guides were kept: incident response
+playbooks, threat hunting queries, detection patterns, log analysis, hardening, web/API pentesting,
+red teaming, cloud, containers, forensics, cryptography, compliance, and IoT Thread/Matter security.
+Duplicates, ARVO source tarballs, synthetic scenarios (`*-realtime-scenarios`, `*-real-examples*`) and
+template-generated MITRE malware entries were left out.
 
-## Estrutura
+## Layout
 
 ```
-.claude-plugin/          manifesto do plugin + marketplace local
-skills/cybersec/         a skill (SKILL.md + references/*.md)
-scripts/sources.json     mapeamento arquivo de referência -> arquivos do dataset
-scripts/build_references.py  gera references/*.md a partir do dataset
+.claude-plugin/              plugin manifest + local marketplace
+skills/cybersec/             the skill (SKILL.md + references/*.md)
+scripts/sources.json         mapping: reference file -> dataset source files
+scripts/build_references.py  generates references/*.md from the dataset
 ```
 
-## Instalação
+## Installation
 
-Como skill pessoal (symlink):
+As a personal skill (symlink):
 
 ```bash
 ln -s "$PWD/skills/cybersec" ~/.claude/skills/cybersec
 ```
 
-Ou como plugin:
+Or as a plugin:
 
 ```
-/plugin marketplace add /home/marcelo/projects/cybersec
+/plugin marketplace add marcelomizuno/cybersec
 /plugin install cybersec@cybersec
 ```
 
-## Regenerar as referências
+## Rebuilding the references
 
-O dataset é gated: aceite os termos na página do Hugging Face e faça `hf auth login`.
+The dataset is gated: accept its terms on Hugging Face and run `hf auth login` first.
 
 ```bash
 hf download Vyber07/cyber-security --repo-type dataset --local-dir data/ \
@@ -43,4 +43,8 @@ hf download Vyber07/cyber-security --repo-type dataset --local-dir data/ \
 python3 -I scripts/build_references.py data/
 ```
 
-Para incluir ou remover conteúdo, edite `scripts/sources.json`.
+To add or remove content, edit `scripts/sources.json`.
+
+## License
+
+Apache-2.0. Reference content is derived from the Vyber07/cyber-security dataset; see `NOTICE`.

@@ -5,7 +5,7 @@ description: Practical cybersecurity reference for authorized security work — 
 
 # Cybersec
 
-A curated knowledge base distilled from the `Vyber07/cyber-security` Hugging Face dataset. It is a set of **checklists, commands and query templates**, not ground truth: adapt to the user's environment, check tool versions and syntax, and prefer authoritative sources (MITRE ATT&CK, NVD, vendor docs) for specific CVEs, malware or threat-actor facts.
+A curated knowledge base distilled from the [Vyber07/cyber-security](https://huggingface.co/datasets/Vyber07/cyber-security) Hugging Face dataset (Apache-2.0). It is a set of **checklists, commands and query templates**, not ground truth: adapt to the user's environment, check tool versions and syntax, and prefer authoritative sources (MITRE ATT&CK, NVD, vendor docs) for specific CVEs, malware or threat-actor facts.
 
 ## How to use
 

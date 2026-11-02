@@ -1,6 +1,6 @@
 # Cryptography and PKI
 
-> Source: huggingface.co/datasets/Vyber07/cyber-security (Apache-2.0). Community-curated reference; verify commands and versions before use.
+> Source: [Vyber07/cyber-security](https://huggingface.co/datasets/Vyber07/cyber-security) on Hugging Face (Apache-2.0). Community-curated reference; verify commands and versions before use.
 
 ## Provide a comprehensive guide to cryptography, including algorithms, attacks, and best practices.
 

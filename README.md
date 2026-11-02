@@ -45,6 +45,15 @@ python3 -I scripts/build_references.py data/
 
 To add or remove content, edit `scripts/sources.json`.
 
+## Credits
+
+All reference content comes from the **cyber-security** dataset by
+[Vyber07](https://huggingface.co/Vyber07) on Hugging Face:
+<https://huggingface.co/datasets/Vyber07/cyber-security>. This project only selects, deduplicates and
+reformats a subset of it as Markdown for use as a Claude Code skill. Credit for the original content
+belongs to the dataset author and its upstream sources.
+
 ## License
 
-Apache-2.0. Reference content is derived from the Vyber07/cyber-security dataset; see `NOTICE`.
+Licensed under the [Apache License 2.0](LICENSE). The reference content is derived from the
+Vyber07/cyber-security dataset, also released under Apache-2.0; see [`NOTICE`](NOTICE).

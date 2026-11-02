@@ -1,6 +1,6 @@
 # Attack Patterns: How They Work and How to Detect Them
 
-> Source: huggingface.co/datasets/Vyber07/cyber-security (Apache-2.0). Community-curated reference; verify commands and versions before use.
+> Source: [Vyber07/cyber-security](https://huggingface.co/datasets/Vyber07/cyber-security) on Hugging Face (Apache-2.0). Community-curated reference; verify commands and versions before use.
 
 ## Brute Force Authentication Attack
 - **How to attack**: Use Hydra, Medusa, or custom scripts to try thousands of password combinations against login endpoints. Target SSH, RDP, FTP, web logins. Use credential lists from data breaches. Rotate source IPs to avoid rate limiting.

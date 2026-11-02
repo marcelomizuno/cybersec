@@ -1,2 +1,9 @@
-The files in skills/cybersec/references/ are derived from the "cyber-security" dataset by
-Vyber07 (https://huggingface.co/datasets/Vyber07/cyber-security), licensed under Apache-2.0.
+cybersec
+Copyright 2026 Marcelo Mizuno
+
+This product includes content derived from the "cyber-security" dataset by Vyber07,
+available at https://huggingface.co/datasets/Vyber07/cyber-security and licensed under
+the Apache License, Version 2.0.
+
+The files in skills/cybersec/references/ are a selected, deduplicated and reformatted
+subset of that dataset.

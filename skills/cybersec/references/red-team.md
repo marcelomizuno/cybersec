@@ -2,6 +2,16 @@
 
 > Source: [Vyber07/cyber-security](https://huggingface.co/datasets/Vyber07/cyber-security) on Hugging Face (Apache-2.0). Community-curated reference; verify commands and versions before use.
 
+## Contents
+
+- Provide a complete red team playbook covering all phases of a penetration test.
+- What are the techniques for evading detection during a red team engagement?
+- How do I set up a red team infrastructure?
+- How to perform OSINT reconnaissance on a target organization?
+- How to conduct a phishing awareness assessment?
+- Provide a comprehensive guide to phishing attacks, defenses, and detection methods.
+- How do I create phishing awareness training programs?
+
 ## Provide a complete red team playbook covering all phases of a penetration test.
 
 #### Complete Red Team Playbook

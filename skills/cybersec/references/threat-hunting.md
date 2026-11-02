@@ -2,6 +2,15 @@
 
 > Source: [Vyber07/cyber-security](https://huggingface.co/datasets/Vyber07/cyber-security) on Hugging Face (Apache-2.0). Community-curated reference; verify commands and versions before use.
 
+## Contents
+
+- Suspicious PowerShell Execution
+- Lateral Movement Detection
+- Persistence Mechanism Detection
+- Credential Access Detection
+- Defense Evasion Detection
+- Exfiltration Detection
+
 ## Suspicious PowerShell Execution
 - **Hypothesis**: Adversaries may use PowerShell for execution, lateral movement, and defense evasion.
 

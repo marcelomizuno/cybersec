@@ -2,6 +2,11 @@
 
 > Source: [Vyber07/cyber-security](https://huggingface.co/datasets/Vyber07/cyber-security) on Hugging Face (Apache-2.0). Community-curated reference; verify commands and versions before use.
 
+## Contents
+
+- How to assess GDPR compliance for a web application?
+- How to assess HIPAA compliance for a healthcare application?
+
 ## How to assess GDPR compliance for a web application?
 
 #### GDPR Compliance Assessment

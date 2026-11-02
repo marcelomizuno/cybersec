@@ -84,6 +84,22 @@ def render_record(rec, level: int) -> str:
     return "\n".join(render_value(rec, level)) + "\n"
 
 
+# Anthropic's skill authoring guide recommends a table of contents for
+# reference files longer than 100 lines, so partial reads still show scope.
+TOC_MIN_LINES = 100
+
+
+def table_of_contents(md: str) -> str:
+    """List the level-2 headings (outside code blocks) as a contents section."""
+    items, in_code = [], False
+    for line in md.splitlines():
+        if line.lstrip().startswith("```"):
+            in_code = not in_code
+        elif not in_code and line.startswith("## "):
+            items.append(f"- {line[3:].strip()}")
+    return "## Contents\n\n" + "\n".join(items) + "\n"
+
+
 def build(data_dir: Path) -> None:
     OUT.mkdir(parents=True, exist_ok=True)
     for fname, spec in SOURCES.items():
@@ -97,9 +113,12 @@ def build(data_dir: Path) -> None:
             records = data if isinstance(data, list) else [data]
             for rec in records:
                 chunks.append(render_record(rec, 2))
-        text = "\n".join(chunks)
+        text = "\n".join(chunks[2:])
         while "\n\n\n" in text:
             text = text.replace("\n\n\n", "\n\n")
+        if text.count("\n") > TOC_MIN_LINES:
+            text = table_of_contents(text) + "\n" + text
+        text = "\n".join(chunks[:2]) + "\n" + text
         (OUT / fname).write_text(text.strip() + "\n")
         print(f"{fname}: {len(text) // 1024} KB")
 

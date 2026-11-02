@@ -2,6 +2,13 @@
 
 > Source: [Vyber07/cyber-security](https://huggingface.co/datasets/Vyber07/cyber-security) on Hugging Face (Apache-2.0). Community-curated reference; verify commands and versions before use.
 
+## Contents
+
+- Provide a comprehensive guide to cloud security attacks, defenses, and detection methods.
+- How do I perform cloud penetration testing?
+- What are the best practices for cloud security architecture?
+- How to assess Identity and Access Management (IAM) security?
+
 ## Provide a comprehensive guide to cloud security attacks, defenses, and detection methods.
 
 #### Comprehensive Cloud Security Guide

@@ -2,6 +2,19 @@
 
 > Source: [Vyber07/cyber-security](https://huggingface.co/datasets/Vyber07/cyber-security) on Hugging Face (Apache-2.0). Community-curated reference; verify commands and versions before use.
 
+## Contents
+
+- Brute Force Authentication Attack
+- Lateral Movement via PsExec
+- SQL Injection Attack
+- Ransomware File Encryption Activity
+- Credential Dumping via Mimikatz
+- Data Exfiltration via DNS Tunneling
+- Privilege Escalation via Windows Service Exploitation
+- Cross-Site Scripting (XSS) Attack
+- Command Injection Attack
+- Network Scanning and Reconnaissance
+
 ## Brute Force Authentication Attack
 - **How to attack**: Use Hydra, Medusa, or custom scripts to try thousands of password combinations against login endpoints. Target SSH, RDP, FTP, web logins. Use credential lists from data breaches. Rotate source IPs to avoid rate limiting.
 - **How to detect**: Monitor for multiple failed authentication attempts from same source. Threshold: >10 failures in 5 minutes. Watch for distributed brute force from botnets.

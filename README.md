@@ -26,7 +26,13 @@ As a personal skill (symlink):
 ln -s "$PWD/skills/cybersec" ~/.claude/skills/cybersec
 ```
 
-Or as a plugin:
+Via [skills.sh](https://skills.sh) (works with Claude Code and other agents; requires the repo to be public):
+
+```bash
+npx skills add marcelomizuno/cybersec
+```
+
+Or as a Claude Code plugin:
 
 ```
 /plugin marketplace add marcelomizuno/cybersec

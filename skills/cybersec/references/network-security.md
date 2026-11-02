@@ -2,6 +2,15 @@
 
 > Source: [Vyber07/cyber-security](https://huggingface.co/datasets/Vyber07/cyber-security) on Hugging Face (Apache-2.0). Community-curated reference; verify commands and versions before use.
 
+## Contents
+
+- Provide a comprehensive guide to network attacks, defenses, and detection methods.
+- How do I detect advanced persistent threats (APTs) on a network?
+- What are the latest network attack techniques and how to defend against them?
+- How to configure and test a firewall for network security?
+- How to set up an Intrusion Detection System (IDS)?
+- How to analyze network traffic for security threats?
+
 ## Provide a comprehensive guide to network attacks, defenses, and detection methods.
 
 #### Comprehensive Network Security Guide

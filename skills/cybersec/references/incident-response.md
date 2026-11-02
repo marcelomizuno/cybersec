@@ -2,6 +2,13 @@
 
 > Source: [Vyber07/cyber-security](https://huggingface.co/datasets/Vyber07/cyber-security) on Hugging Face (Apache-2.0). Community-curated reference; verify commands and versions before use.
 
+## Contents
+
+- Ransomware Incident Response
+- Phishing Incident Response
+- Data Breach Incident Response
+- How to set up a Security Operations Center (SOC)?
+
 ## Ransomware Incident Response
 
 ### Detection signs

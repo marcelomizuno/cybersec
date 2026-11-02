@@ -2,6 +2,25 @@
 
 > Source: [Vyber07/cyber-security](https://huggingface.co/datasets/Vyber07/cyber-security) on Hugging Face (Apache-2.0). Community-curated reference; verify commands and versions before use.
 
+## Contents
+
+- Explain the Thread network architecture and how OpenThread implements it. What are the security implications of each component?
+- Explain all the security keys used in Thread networks and how they can be attacked or secured.
+- How do you perform forensic analysis on a compromised Thread network?
+- How does Thread commissioning work and what are the attack vectors during the commissioning process?
+- What are the specific attacks on Thread mesh routing and how can they be detected?
+- Explain the Thread Border Router architecture and how it can be attacked or secured.
+- What tools and techniques are used to attack Thread networks?
+- Provide a complete red team playbook for attacking a Thread network deployment.
+- What are the defensive measures against Thread network attacks?
+- Explain how Matter works over Thread and what security challenges exist in this integration.
+- What are the specific tools and techniques for testing Matter-over-Thread security?
+- How do I set up a Thread security testing lab for penetration testing and research?
+- What are the specific commands and configurations for Thread network penetration testing?
+- How do I detect and prevent Thread network attacks in production?
+- How do you conduct forensic analysis on a compromised Thread network?
+- What are the specific tools for Thread network forensics?
+
 ## Explain the Thread network architecture and how OpenThread implements it. What are the security implications of each component?
 
 #### Thread Network Architecture

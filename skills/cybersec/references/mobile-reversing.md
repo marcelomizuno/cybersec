@@ -2,6 +2,19 @@
 
 > Source: [Vyber07/cyber-security](https://huggingface.co/datasets/Vyber07/cyber-security) on Hugging Face (Apache-2.0). Community-curated reference; verify commands and versions before use.
 
+## Contents
+
+- How to perform security testing on an Android application?
+- How to analyze Android APK permissions and manifest?
+- How to perform iOS application security testing?
+- Explain the complete process of reverse engineering an Android APK file.
+- How to analyze Android APK permissions and identify security risks?
+- Explain how to reverse engineer an EXE executable file.
+- How to reverse engineer firmware from embedded devices?
+- Explain how to decompile and analyze Android APK manifest files.
+- How to use Frida for dynamic instrumentation on Android?
+- How to perform malware analysis on a suspicious file?
+
 ## How to perform security testing on an Android application?
 
 #### Android Application Security Testing

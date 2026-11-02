@@ -1,0 +1,76 @@
+{
+  "_comment": "Mapping: reference file -> curated source files from huggingface.co/datasets/Vyber07/cyber-security. Synthetic 'realtime-scenarios', '*-real-examples*' and templated MITRE malware files are intentionally excluded.",
+  "incident-response.md": {
+    "title": "Incident Response Playbooks",
+    "sources": ["blue-team/blue-team__incident-response-playbooks.json", "blue-team/blue-team__defense-monitoring.json"]
+  },
+  "threat-hunting.md": {
+    "title": "Threat Hunting Queries (Splunk / Sigma / KQL)",
+    "sources": ["blue-team/blue-team__threat-hunting-queries.json"]
+  },
+  "detection-patterns.md": {
+    "title": "Attack Patterns: How They Work and How to Detect Them",
+    "sources": ["blue-team/blue-team__attack-patterns-detection.json"]
+  },
+  "log-analysis.md": {
+    "title": "Log Analysis Guide",
+    "sources": ["blue-team/blue-team__log-analysis-guide.json"]
+  },
+  "hardening.md": {
+    "title": "System Hardening Guides",
+    "sources": ["blue-team/blue-team__hardening-guides.json"]
+  },
+  "network-security.md": {
+    "title": "Network Security: Attacks, Defenses, Firewalls and IDS/IPS",
+    "sources": ["network-security/network-attack-defense-complete.json", "network-security/network-security__firewall-ids-ips.json"]
+  },
+  "cloud-security.md": {
+    "title": "Cloud Security (AWS / Azure / GCP) and IAM",
+    "sources": ["cloud-security/cloud-attack-defense-complete.json", "identity-access-management/identity-access-management__iam-rbac-sso.json"]
+  },
+  "containers-devsecops.md": {
+    "title": "Containers, Kubernetes, DevSecOps and Supply Chain",
+    "sources": ["container-security/container-security__docker-kubernetes-security.json", "devsecops/devsecops__secure-development.json", "supply-chain-security/supply-chain-security__dependency-cicd-security.json"]
+  },
+  "web-api-pentest.md": {
+    "title": "Web Application and API Penetration Testing",
+    "sources": ["red-team/web-app-penetration-testing.json", "api-security/api-security__rest-graphql-security.json", "vapt/vapt__vapt-scan-methodology.json"]
+  },
+  "red-team.md": {
+    "title": "Red Team Playbook, OSINT and Social Engineering",
+    "sources": ["red-team/red-team-complete-playbook.json", "osint/osint__open-source-intelligence.json", "social-engineering/social-engineering__phishing-vishing.json", "phishing/phishing-attack-defense-complete.json"]
+  },
+  "mobile-reversing.md": {
+    "title": "Mobile Security and Reverse Engineering",
+    "sources": ["mobile-security/mobile-security__android-ios-security.json", "reverse-engineering/reverse-engineering__apk-reverse-engineering.json"]
+  },
+  "forensics.md": {
+    "title": "Digital Forensics (Memory and Disk)",
+    "sources": ["digital-forensics/digital-forensics__memory-disk-forensics.json"]
+  },
+  "cryptography.md": {
+    "title": "Cryptography and PKI",
+    "sources": ["cryptography/cryptography-complete.json", "cryptography/cryptography__encryption-pki.json"]
+  },
+  "compliance.md": {
+    "title": "Compliance (GDPR / HIPAA / PCI-DSS)",
+    "sources": ["compliance/compliance__gdpr-hipaa-pcidss.json"]
+  },
+  "blockchain.md": {
+    "title": "Smart Contract and DeFi Security",
+    "sources": ["blockchain-security/blockchain-security__smart-contract-defi.json"]
+  },
+  "iot-thread.md": {
+    "title": "IoT: Thread / OpenThread / Matter Security",
+    "sources": [
+      "iot-openthread-security/thread-architecture-security.json",
+      "iot-openthread-security/thread-security-keys-crypto.json",
+      "iot-openthread-security/thread-commissioning-attacks.json",
+      "iot-openthread-security/thread-border-router-exploitation.json",
+      "iot-openthread-security/thread-attack-playbook.json",
+      "iot-openthread-security/matter-thread-integration-security.json",
+      "iot-openthread-security/thread-security-testing-lab.json",
+      "iot-openthread-security/thread-forensics-incident-response.json"
+    ]
+  }
+}

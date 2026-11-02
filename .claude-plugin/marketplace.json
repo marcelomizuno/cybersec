@@ -1,0 +1,7 @@
+{
+  "name": "cybersec",
+  "owner": { "name": "Marcelo" },
+  "plugins": [
+    { "name": "cybersec", "source": "./", "description": "Cybersecurity reference skill" }
+  ]
+}

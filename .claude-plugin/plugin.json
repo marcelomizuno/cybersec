@@ -1,0 +1,8 @@
+{
+  "name": "cybersec",
+  "version": "0.1.0",
+  "description": "Cybersecurity reference skill: IR playbooks, threat hunting, detection, hardening, pentest methodology, forensics, crypto, compliance and IoT Thread/Matter security.",
+  "author": { "name": "Marcelo" },
+  "license": "Apache-2.0",
+  "keywords": ["security", "blue-team", "red-team", "threat-hunting", "forensics", "iot"]
+}

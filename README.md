@@ -2,6 +2,8 @@
 
 # cybersec
 
+[![skills.sh](https://skills.sh/b/marcelomizuno/cybersec)](https://skills.sh/marcelomizuno/cybersec)
+
 A Claude Code skill with a curated cybersecurity reference knowledge base, built from the
 [Vyber07/cyber-security](https://huggingface.co/datasets/Vyber07/cyber-security) Hugging Face dataset (Apache-2.0).
 

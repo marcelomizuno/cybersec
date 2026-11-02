@@ -1,7 +1,16 @@
 {
   "name": "cybersec",
-  "owner": { "name": "Marcelo" },
+  "owner": {
+    "name": "Marcelo"
+  },
+  "metadata": {
+    "description": "Cybersecurity reference skill for Claude Code: IR playbooks, threat hunting, detection, hardening, pentest methodology, forensics, crypto, compliance and IoT Thread/Matter security."
+  },
   "plugins": [
-    { "name": "cybersec", "source": "./", "description": "Cybersecurity reference skill" }
+    {
+      "name": "cybersec",
+      "source": "./",
+      "description": "Cybersecurity reference skill"
+    }
   ]
 }

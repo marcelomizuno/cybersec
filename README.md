@@ -1,3 +1,5 @@
+<p align="center"><img src=".claude-plugin/icon.png" alt="cybersec icon" width="128"></p>
+
 # cybersec
 
 A Claude Code skill with a curated cybersecurity reference knowledge base, built from the

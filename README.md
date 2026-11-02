@@ -55,6 +55,25 @@ python3 -I scripts/build_references.py data/
 
 To add or remove content, edit `scripts/sources.json`.
 
+## CI/CD
+
+GitHub Actions run on every push and pull request (`.github/workflows/ci.yml`):
+
+- `scripts/validate_skill.py` checks the skill against Anthropic's authoring rules (frontmatter limits,
+  `SKILL.md` size, reference links, code fences, tables of contents).
+- `claude plugin validate` checks the plugin and marketplace manifests.
+- The skills.sh CLI confirms it can discover the skill.
+
+To release, bump `version` in `.claude-plugin/plugin.json`, commit, then push a matching tag:
+
+```bash
+git tag v0.2.0 && git push origin v0.2.0
+```
+
+`.github/workflows/release.yml` re-runs the checks, verifies the tag matches `plugin.json`, and publishes a
+GitHub release with the skill packaged as a zip (uploadable to Claude.ai as a custom skill).
+skills.sh and the plugin marketplace install straight from `main`, so they pick up changes without a release.
+
 ## Credits
 
 All reference content comes from the **cyber-security** dataset by

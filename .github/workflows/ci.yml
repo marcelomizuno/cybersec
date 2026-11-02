@@ -1,0 +1,38 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_call:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    env:
+      DISABLE_TELEMETRY: "1"
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Validate skill structure and content
+        run: python3 -I scripts/validate_skill.py
+
+      - name: Validate Claude Code plugin and marketplace manifests
+        run: npx -y @anthropic-ai/claude-code@2.1.316 plugin validate .
+
+      - name: Check skills.sh discovers the skill
+        run: |
+          out=$(npx -y skills@1.7.4 add "$GITHUB_WORKSPACE" --list 2>&1)
+          echo "$out"
+          echo "$out" | grep -q "cybersec" || { echo "::error::skills CLI did not find the cybersec skill"; exit 1; }

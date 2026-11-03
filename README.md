@@ -111,9 +111,11 @@ anything in the reference files:
 5. **Authorization first.** No action against systems you don't own without written authorization and scope.
 6. **Your data stays local.** Nothing is sent to external hosts.
 
-The offensive red team material in the source dataset (C2, evasion, credential theft) was deliberately left out
-after the [skills.sh security audits](https://www.skills.sh/marcelomizuno/cybersec/cybersec) flagged it. CI blocks it
-from coming back.
+The offensive red team material in the source dataset (C2, evasion, credential theft, phishing kits, OSINT) was
+deliberately removed in v0.2.0 after the [skills.sh security audits](https://www.skills.sh/marcelomizuno/cybersec/cybersec)
+flagged it, and CI blocks it from coming back. The [CHANGELOG](CHANGELOG.md#020---2026-11-03) lists exactly what
+was removed and why. If you do authorized red team work, use those files directly from the
+[original dataset](https://huggingface.co/datasets/Vyber07/cyber-security) on Hugging Face.
 
 ## How it's built
 

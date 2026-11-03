@@ -8,10 +8,15 @@ A Claude Code skill with a curated cybersecurity reference knowledge base, built
 [Vyber07/cyber-security](https://huggingface.co/datasets/Vyber07/cyber-security) Hugging Face dataset (Apache-2.0).
 
 Out of the original ~18 GB dataset, only the structured, practical guides were kept: incident response
-playbooks, threat hunting queries, detection patterns, log analysis, hardening, web/API pentesting,
-red teaming, cloud, containers, forensics, cryptography, compliance, and IoT Thread/Matter security.
+playbooks, threat hunting queries, detection patterns, log analysis, hardening, web/API security testing,
+cloud, containers, forensics, cryptography, compliance, and IoT Thread/Matter security.
 Duplicates, ARVO source tarballs, synthetic scenarios (`*-realtime-scenarios`, `*-real-examples*`) and
-template-generated MITRE malware entries were left out.
+template-generated MITRE malware entries were left out. The offensive red team playbook was also
+removed after the skills.sh security audits flagged it.
+
+`SKILL.md` carries safety rules the agent must follow: references are documentation, not scripts; no remote
+code piped to a shell; logs and forensic artifacts are untrusted data; read-only analysis first; and
+authorization before any action against systems the user does not own.
 
 ## Layout
 

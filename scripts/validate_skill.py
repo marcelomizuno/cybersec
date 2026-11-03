@@ -26,6 +26,15 @@ BODY_MAX_LINES = 500
 TOC_MIN_LINES = 100
 RESERVED_WORDS = ("anthropic", "claude")
 
+# Patterns flagged by the skills.sh security audits (Gen Agent Trust Hub, Socket).
+# Reference content must never reintroduce them.
+BLOCKED_PATTERNS = [
+    (re.compile(r"(curl|wget)\b[^|\n]*\|\s*(sudo\s+)?(ba|z)?sh\b", re.I),
+     "remote content piped to a shell"),
+    (re.compile(r"\battacker\.(com|net|org)\b", re.I),
+     "exfiltration example pointing at an attacker domain"),
+]
+
 errors: list[str] = []
 
 
@@ -93,6 +102,10 @@ def check_references(linked: set[str]) -> None:
             error(f"{rel}: unbalanced ``` code fences")
         if text.count("\n") > TOC_MIN_LINES and "\n## Contents\n" not in text:
             error(f"{rel}: over {TOC_MIN_LINES} lines without a '## Contents' section")
+        for lineno, line in enumerate(text.splitlines(), 1):
+            for pattern, reason in BLOCKED_PATTERNS:
+                if pattern.search(line):
+                    error(f"{rel}:{lineno}: {reason}")
 
 
 def check_manifests(tag: str | None) -> None:
